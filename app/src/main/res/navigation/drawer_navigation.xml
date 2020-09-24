@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.graduatedwork.fragments.CalendarFragment"
+        android:label="calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/nav_friends"
+        android:name="com.example.graduatedwork.fragments.FriendsListFragment"
+        android:label="friends"
+        tools:layout="@layout/fragment_friends_list" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.graduatedwork.fragments.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_important"
+        android:name="com.example.graduatedwork.fragments.ImportantFragment"
+        android:label="important"
+        tools:layout="@layout/fragment_important" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.graduatedwork.repo.SettingsFragment"
+        android:label="settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.graduatedwork.fragments.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
